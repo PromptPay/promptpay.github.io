@@ -12,12 +12,12 @@
     <input id="pp-id" type="number" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID" maxlength="13" required/><br />
     Amount
     <input id="amount" type="number" placeholder="1000.00"><br />
-    <div id="qrcode" style="width:300px; height:300px;"></div>
+    <div id="qrcode" style="width:250px; height:250px;"></div>
 
     <script type="text/javascript">
       var qrcode = new QRCode(document.getElementById("qrcode"), {
-      	width : 300,
-      	height : 300
+      	width : 250,
+      	height : 250
       });
       function makeCode () {
       	var ppID = document.getElementById("pp-id").value;
