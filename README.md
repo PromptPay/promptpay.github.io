@@ -14,4 +14,4 @@ Generate PromptPay QR Code
 MIT License
 
 ## Contact
-twitter @mrnonz
+twitter [@MrNonz](https://twitter.com/MrNonz)
