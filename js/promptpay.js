@@ -1,6 +1,6 @@
-// Credit https://github.com/dtinth/promptpay-qr
+// Credit : https://github.com/dtinth/promptpay-qr
 // Credit : https://gist.github.com/chitchcock/5112270
-// Edit CRC library by @MrNonz
+// Edit code for suitable javascript run on client-side by @MrNonz
 
 var ID_PAYLOAD_FORMAT = '00'
 var ID_POI_METHOD = '01'
