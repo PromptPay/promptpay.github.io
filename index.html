@@ -19,13 +19,14 @@
       	height : 300
       });
       function makeCode () {
-      	var elText = document.getElementById("pp-id");
+      	var ppID = document.getElementById("pp-id").value;
+        var amount = document.getElementById("amount").value;
 
-      	if (!elText.value) {
-      		elText.value="promptpay.github.io";
+      	if (!ppID) {
+      		ppID="promptpay.github.io";
       	}
 
-      	qrcode.makeCode(elText.value);
+      	qrcode.makeCode(ppID);
       }
       makeCode();
       $("#pp-id").
