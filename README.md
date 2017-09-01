@@ -25,4 +25,4 @@ MIT License
 ---
 
 ## Contact
-twitter @mrnonz
+twitter [@MrNonz](https://twitter.com/MrNonz)
