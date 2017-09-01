@@ -62,7 +62,7 @@
                 <label>Amount</label>
                 <input type="number" class="form-control" id="amount"placeholder="1000.00">
               </div>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+              <button type="button" class="btn btn-primary btn-lg" id="myBtn">Submit</button>
             </form>
           </div>
         </div>
@@ -94,8 +94,20 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <script src="js/new-age.min.js"></script>
+
+    <script type="text/javascript">
+    
+      // $(document).ready(function(){
+      //   $("#myBtn").click(function(){
+      //     alert('Hi')
+      //     $("#myModal").modal();
+      //   });
+      // });
+    
+    </script>
     
     <script type="text/javascript">
+
       var qrcode = new QRCode(document.getElementById("qrcode"), {
       	width : 250,
       	height : 250
@@ -109,25 +121,37 @@
 
       	qrcode.makeCode(generatePayload(ppID, amount));
       }
-      makeCode();
-      $("#pp-id").
-      	on("blur", function () {
-      		makeCode();
-      	}).
-      	on("keydown", function (e) {
-      		if (e.keyCode == 13) {
-      			makeCode();
-      		}
-      	});
-      $("#amount").
-      	on("blur", function () {
-      		makeCode();
-      	}).
-      	on("keydown", function (e) {
-      		if (e.keyCode == 13) {
-      			makeCode();
-      		}
-      	});
+
+      $(document).ready(function(){
+        $("#myBtn").click(function(){
+          var ppID = document.getElementById("pp-id").value;
+          var amount = parseFloat(document.getElementById("amount").value);
+          if(ppID=='' || isNaN(amount)){
+            alert('NULL')
+          }else{
+            makeCode();
+            $("#pp-id").
+              on("blur", function () {
+                makeCode();
+              }).
+              on("keydown", function (e) {
+                if (e.keyCode == 13) {
+                  makeCode();
+                }
+              });
+            $("#amount").
+              on("blur", function () {
+                makeCode();
+              }).
+              on("keydown", function (e) {
+                if (e.keyCode == 13) {
+                  makeCode();
+                }
+              });
+            $("#myModal").modal();
+            }
+        });
+      });
     </script>
   </body>
 </html>
