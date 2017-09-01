@@ -21,8 +21,7 @@
       });
       function makeCode () {
       	var ppID = document.getElementById("pp-id").value;
-        var amount = document.getElementById("amount").value;
-
+        var amount = parseFloat(document.getElementById("amount").value);
       	if (!ppID) {
       		ppID="promptpay.github.io";
       	}
