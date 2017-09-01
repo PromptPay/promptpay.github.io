@@ -6,3 +6,10 @@
   text-align: center !important;
   margin-top: 200px;
 }
+
+.generate-content {
+  margin-top: 20px;
+  height: 400px;
+  width: 70%;
+  box-shadow: 1px 1px 20px #888888;
+}
