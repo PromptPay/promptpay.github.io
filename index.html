@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PromptPay QR Code Generator</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/qrcode.min.js"></script>
+  </head>
+  <body>
+    PP-id
+    <input id="pp-id" type="number" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID" maxlength="13"/><br />
+    Amount
+    <input id="amount" type="number" placeholder="1000.00"><br />
+    <div id="qrcode" style="width:300px; height:300px;"></div>
+
+    <script type="text/javascript">
+      var qrcode = new QRCode(document.getElementById("qrcode"), {
+      	width : 300,
+      	height : 300
+      });
+      function makeCode () {
+      	var ppID = document.getElementById("pp-id").value;
+        var amount = document.getElementById("amount").value;
+
+      	if (!ppID) {
+      		ppID="promptpay.github.io";
+      	}
+
+      	qrcode.makeCode(ppID);
+      }
+      makeCode();
+      $("#pp-id").
+      	on("blur", function () {
+      		makeCode();
+      	}).
+      	on("keydown", function (e) {
+      		if (e.keyCode == 13) {
+      			makeCode();
+      		}
+      	});
+    </script>
+  </body>
+</html>
