@@ -118,9 +118,9 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430); }
+  background: url("../img/bg-pattern.png"), #56CCF2;
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #56CCF2, #2F80ED) !important;
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #56CCF2, #2F80ED) !important; }
   header.masthead .header-content {
     max-width: 500px;
     margin-bottom: 100px;
@@ -196,8 +196,8 @@ section.features .feature-item {
     font-size: 80px;
     display: block;
     margin-bottom: 15px;
-    background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-    background: linear-gradient(to left, #7b4397, #dc2430);
+    background: -webkit-linear-gradient(to left, #56CCF2, #2F80ED) !important;
+    background: linear-gradient(to left, #56CCF2, #2F80ED) !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
