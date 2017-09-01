@@ -31,12 +31,6 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#generate">Generate QR</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -59,35 +53,39 @@
       <div class="container generate-content">
         <div class="row">
           <div class="col-md-8 mx-auto" style="margin-top:40px;">
-              <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input">
-                      Check me out
-                    </label>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+            <form>
+              <div class="form-group">
+                <label>PP-ID</label>
+                <input type="number" class="form-control" id="pp-id" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID" maxlength="13" required>
+              </div>
+              <div class="form-group">
+                <label>Amount</label>
+                <input type="number" class="form-control" id="amount"placeholder="1000.00">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
-
-    PP-id
-    <input id="pp-id" type="number" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID" maxlength="13" required/><br />
-    Amount
-    <input id="amount" type="number" placeholder="1000.00"><br />
-    <div id="qrcode" style="width:250px; height:250px;"></div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <div id="qrcode" style="width:250px; height:250px;"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
