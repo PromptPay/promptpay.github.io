@@ -1,0 +1,90 @@
+header.masthead {
+  height: 100% !important;
+  min-height: 0px;
+}
+
+.header-content {
+  text-align: center !important;
+  margin-top: 200px;
+  width: 70%;
+}
+
+header.masthead .header-content {
+  max-width: 700px;
+}
+
+section {
+  padding: 0px;
+}
+
+.generate {
+  height: 100% !important;
+}
+
+.generate-section {
+  padding-top: 80px;
+}
+
+.generate-content {
+  height: 400px;
+  width: 70%;
+  box-shadow: 1px 1px 20px #888888;
+}
+
+#myBtn {
+  margin-top: 20px;
+  background: linear-gradient(to left, #56CCF2 , #2F80ED);
+  border-style: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.font-awasome-logo {
+  font-size: 17px;
+}
+
+.list-inline-item {
+  margin-bottom: 30px;
+}
+
+.close-button {
+  color: white;
+  background: linear-gradient(to left, #56CCF2 , #2F80ED);
+  border-style: none;
+}
+
+@media (max-width:990px) {
+  .header-content {
+    margin-top: 65px !important;
+  }
+}
+
+@media (max-width:768px) {
+  .header-content {
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width:442px) {
+  #mainNav .navbar-brand {
+    font-size: 15px;
+  }
+
+  .header-content {
+    margin-top: 0px !important;
+  }
+
+  #myBtn {
+    width: 220px;
+    font-size: 15px;
+  }
+
+  .generate-section {
+    padding-top: 90px;
+  }
+}

@@ -3,50 +3,201 @@
   <head>
     <meta charset="utf-8">
     <title>PromptPay QR Code Generator</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chonburi|Mitr" rel="stylesheet">
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+    <link href="css/new-age.css" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/qrcode.min.js"></script>
     <script type="text/javascript" src="js/promptpay.js"></script>
   </head>
-  <body>
-    PP-id
-    <input id="pp-id" type="number" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID" maxlength="13" required/><br />
-    Amount
-    <input id="amount" type="number" placeholder="1000.00"><br />
-    <div id="qrcode" style="width:250px; height:250px;"></div>
+  <body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">PromptPay QR Code Generator</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#generate">สร้าง QR Code รับเงิน</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <script type="text/javascript">
-      var qrcode = new QRCode(document.getElementById("qrcode"), {
-      	width : 250,
-      	height : 250
-      });
-      function makeCode () {
-      	var ppID = document.getElementById("pp-id").value;
-        var amount = parseFloat(document.getElementById("amount").value);
-      	if (!ppID) {
-      		ppID="promptpay.github.io";
-      	}
+  <header class="masthead">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 my-auto content-header">
+          <div class="header-content mx-auto">
+            <h1 class="mb-3">การโอนเงินเป็นเรื่องง่ายๆ</h1>
+            <p class="mb-5">แค่มีเบอร์มือถือ, รหัสประจำตัวประชาชน หรือ TAX ID เพียงอย่างใดอย่างหนึ่งก็สามารถโอนเงินผ่านระบบพร้อมเพย์ได้แล้ว</p>
+            <p class="mb-5">เว็บไซต์นี้เปิดให้ใช้งานได้ฟรี และที่สำคัญ <b>ไม่มีการเก็บข้อมูลใดๆ ของคุณ</b></p>
+            <a href="#generate" class="btn btn-outline btn-xl js-scroll-trigger">สร้าง QR Code รับเงิน</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-      	qrcode.makeCode(generatePayload(ppID, amount));
+  <section class="generate text-center" id="generate">
+    <div class="generate-section">
+      <div class="container generate-content">
+        <div class="row generate-form">
+          <div class="col-md-8 mx-auto" style="margin-top:90px;">
+            <form>
+              <div class="form-group">
+                <label>พร้อมเพย์ ไอดี</label>
+                <input type="number" class="form-control" id="pp-id" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID" maxlength="13" required>
+              </div>
+              <div class="form-group error">
+                <label>จำนวนเงิน</label>
+                <input type="number" class="form-control" id="amount" placeholder="1000.00 (Optional)">
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" id="myBtn">สร้าง QR Code รับเงิน</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p style="margin-bottom:20px; font-size: 15px;">Developed By</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-circle" src="./img/non.jpg">
+            </div>
+            <div class="col-md-8">
+              <p>Nontawat Numor</p>
+              <a href="https://www.facebook.com/MrNonz" target="_blank"><i class="fa fa-facebook-square font-awasome-logo" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/MrNonz" target="_blank"><i class="fa fa-twitter-square font-awasome-logo" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/mrnonx/" target="_blank"><i class="fa fa-instagram font-awasome-logo" aria-hidden="true"></i></a>
+              <a href="https://github.com/mrnonz" target="_blank"><i class="fa fa-github-square font-awasome-logo" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-circle" src="./img/tum.jpg">
+            </div>
+            <div class="col-md-8">
+              <p>Sakan Komolvatin</p>
+              <a href="https://www.facebook.com/profile.php?id=100008378951555" target="_blank"><i class="fa fa-facebook-square font-awasome-logo" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/tu_tummm" target="_blank"><i class="fa fa-twitter-square font-awasome-logo" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/tu_tumm/" target="_blank"><i class="fa fa-instagram font-awasome-logo" aria-hidden="true"></i></a>
+              <a href="https://github.com/tutumm" target="_blank"><i class="fa fa-github-square font-awasome-logo" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-circle" src="./img/ai.jpg">
+            </div>
+            <div class="col-md-8">
+              <p>Yanisa Hemprachitchai</p>
+              <a href="https://www.facebook.com/aiaiaiaiaiya" target="_blank"><i class="fa fa-facebook-square font-awasome-logo" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/aiaiaiaiaiya" target="_blank"><i class="fa fa-twitter-square font-awasome-logo" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/aiaiaiaiaiya/" target="_blank"><i class="fa fa-instagram font-awasome-logo" aria-hidden="true"></i></a>
+              <a href="https://github.com/aiaiaiaiaiya" target="_blank"><i class="fa fa-github-square font-awasome-logo" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">QR Code รับเงิน</h4>
+        </div>
+        <div class="modal-body" style="margin: auto;">
+          <div id="qrcode" style="width:250px; height:250px;"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <script src="js/new-age.min.js"></script>
+
+  <script type="text/javascript">
+
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+      width : 250,
+      height : 250
+    });
+    function makeCode () {
+      var ppID = document.getElementById("pp-id").value;
+      var amount = parseFloat(document.getElementById("amount").value);
+      if (!ppID) {
+        ppID="promptpay.github.io";
       }
-      makeCode();
-      $("#pp-id").
-      	on("blur", function () {
-      		makeCode();
-      	}).
-      	on("keydown", function (e) {
-      		if (e.keyCode == 13) {
-      			makeCode();
-      		}
-      	});
-      $("#amount").
-      	on("blur", function () {
-      		makeCode();
-      	}).
-      	on("keydown", function (e) {
-      		if (e.keyCode == 13) {
-      			makeCode();
-      		}
-      	});
-    </script>
+
+      qrcode.makeCode(generatePayload(ppID, amount));
+    }
+
+    $(document).ready(function(){
+      $("#myBtn").click(function(){
+        var ppID = document.getElementById("pp-id").value;
+        var amount = parseFloat(document.getElementById("amount").value);
+        if(ppID==''){
+          $('#pp-id').addClass('is-invalid')
+        }else{
+          $('#amount').removeClass('is-invalid')
+          $('#pp-id').removeClass('is-invalid')
+          makeCode();
+          $("#pp-id").
+            on("blur", function () {
+              makeCode();
+            }).
+            on("keydown", function (e) {
+              if (e.keyCode == 13) {
+                makeCode();
+              }
+            });
+          $("#amount").
+            on("blur", function () {
+              makeCode();
+            }).
+            on("keydown", function (e) {
+              if (e.keyCode == 13) {
+                makeCode();
+              }
+            });
+          $("#myModal").modal();
+          }
+      });
+    });
+  </script>
   </body>
 </html>
