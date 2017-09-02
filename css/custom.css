@@ -17,8 +17,8 @@ section {
   padding: 0px;
 }
 
-.generate {
-  height: 100% !important;
+#generate {
+  height: 93%;
 }
 
 .generate-section {
