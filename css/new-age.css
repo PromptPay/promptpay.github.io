@@ -9,7 +9,7 @@ body {
   height: 100%; }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; }
+  font-family: 'Mitr','Muli', 'Helvetica', 'Arial', 'sans-serif'; }
 
 a {
   color: #fdcc52;
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Chonburi','Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px; }
 
@@ -59,7 +59,7 @@ section {
   letter-spacing: 1px; }
   #mainNav .navbar-brand {
     color: #fdcc52;
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'Mitr','Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 200;
     letter-spacing: 1px; }
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -70,7 +70,7 @@ section {
     color: #222222; }
   #mainNav .navbar-nav > li > a {
     font-size: 11px;
-    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'Mitr','Lato', 'Helvetica', 'Arial', 'sans-serif';
     letter-spacing: 2px;
     text-transform: uppercase; }
     #mainNav .navbar-nav > li > a.active {
@@ -299,7 +299,7 @@ footer {
 
 .btn {
   border-radius: 300px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Mitr','Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase; }
 
