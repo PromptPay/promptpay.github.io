@@ -138,7 +138,9 @@
           <h4 class="modal-title" id="myModalLabel">QR Code รับเงิน</h4>
         </div>
         <div class="modal-body" style="margin: auto;">
+          <img src="img/PromptPay-logo.jpg" alt="พร้อมเพย์" style="max-width: 250px;margin-bottom: 10px;">
           <div id="qrcode" style="width:250px; height:250px;"></div>
+          <div id="pp-id-show" style="text-align: center; margin-top: 10px;"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default close-button" data-dismiss="modal">Close</button>
@@ -169,6 +171,7 @@
       }
 
       qrcode.makeCode(generatePayload(ppID, amount));
+      $("#pp-id-show").html( ppID );
     }
 
     $(document).ready(function(){
@@ -210,10 +213,10 @@
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  
+
     ga('create', 'UA-105771675-1', 'auto');
     ga('send', 'pageview');
-  
+
   </script>
   </body>
 </html>
