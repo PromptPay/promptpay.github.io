@@ -66,7 +66,7 @@
             <form>
               <div class="form-group">
                 <label>พร้อมเพย์ ไอดี</label>
-                <input type="number" class="form-control" id="pp-id" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID, e-Wallet" maxlength="15" required>
+                <input type="number" class="form-control" id="pp-id" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID, e-Wallet" onKeyPress="if(this.value.length==15) return false;" required>
               </div>
               <div class="form-group error">
                 <label>จำนวนเงิน</label>
