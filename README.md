@@ -39,6 +39,7 @@ MIT License
 
 ## Contact
 - Founder - Nontawat Numor (@MrNonz)
+    * [Github](https://github.com/MrNonz/)
     * [Linkedin](https://www.linkedin.com/in/MrNonz/)
     * [Twitter](https://twitter.com/MrNonz)
     * [Facebook](https://fb.me/MrNonz)
