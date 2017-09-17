@@ -6,7 +6,7 @@
     <meta property="og:title" content="PromptPay QR Code Generator" />
     <meta property="og:site_name" content="Promptpay.github.io"/>
     <meta property="og:url" content="https://promptpay.github.io/" />
-    <meta property="og:description" content="แค่มีเบอร์มือถือ, รหัสประจำตัวประชาชน หรือ TAX ID เพียงอย่างใดอย่างหนึ่งก็สามารถโอนเงินผ่านระบบพร้อมเพย์ได้แล้ว" />
+    <meta property="og:description" content="แค่มีเบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID หรือ e-Wallet เพียงอย่างใดอย่างหนึ่งก็สามารถโอนเงินผ่านระบบพร้อมเพย์ได้แล้ว" />
     <meta property="og:image" content="./img/meta-screen.png" />
     <title>PromptPay QR Code Generator</title>
 
@@ -49,7 +49,7 @@
         <div class="col-lg-12 my-auto content-header">
           <div class="header-content mx-auto">
             <h1 class="mb-3">การโอนเงินเป็นเรื่องง่ายๆ</h1>
-            <p class="mb-5">แค่มีเบอร์มือถือ, รหัสประจำตัวประชาชน หรือ TAX ID เพียงอย่างใดอย่างหนึ่งก็สามารถโอนเงินผ่านระบบพร้อมเพย์ได้แล้ว</p>
+            <p class="mb-5">แค่มีเบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID หรือ e-Wallet เพียงอย่างใดอย่างหนึ่งก็สามารถโอนเงินผ่านระบบพร้อมเพย์ได้แล้ว</p>
             <p class="mb-5">เว็บไซต์นี้เปิดให้ใช้งานได้ฟรี และที่สำคัญ <b>ไม่มีการเก็บข้อมูลใดๆ ของคุณ</b></p>
             <a href="#generate" class="btn btn-outline btn-xl js-scroll-trigger">สร้าง QR Code รับเงิน</a>
           </div>
@@ -66,7 +66,7 @@
             <form>
               <div class="form-group">
                 <label>พร้อมเพย์ ไอดี</label>
-                <input type="number" class="form-control" id="pp-id" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID, e-Wallet" maxlength="15" required>
+                <input type="number" class="form-control" id="pp-id" placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID, e-Wallet" onKeyPress="if(this.value.length==15) return false;" required>
               </div>
               <div class="form-group error">
                 <label>จำนวนเงิน</label>
