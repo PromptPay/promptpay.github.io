@@ -23,6 +23,8 @@ This source code test with
 - SCB - Siam Commercial Bank
 - TBANK - Thanachart Bank
 - TMB - Thai Military Bank
+- MyMo - Government Savings Bank
+- TrueMoney Wallet
 ---
 
 ## References
