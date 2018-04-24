@@ -22,6 +22,7 @@ This source code test with
 - KTB - Krung Thai Bank
 - SCB - Siam Commercial Bank
 - TBANK - Thanachart Bank
+- TMB - Thai Military Bank
 ---
 
 ## References
