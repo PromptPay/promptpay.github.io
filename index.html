@@ -194,7 +194,7 @@
       qrcode.makeCode(generatePayload(ppID, amount));
       $("#pp-id-show").html(ppID);
       if (amount > 0.0) {
-        $("#amount-show").html(amount + " บาท");
+        $("#amount-show").html(amount.toLocaleString() + " บาท");
       } else {
         $("#amount-show").html("");
       }
