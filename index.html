@@ -62,13 +62,13 @@
             <form>
               <div class="form-group">
                 <label>พร้อมเพย์ ไอดี</label>
-                <input type="number" pattern="\d*" class="form-control" id="pp-id"
+                <input type="number" inputmode="numeric" pattern="\d*" class="form-control" id="pp-id"
                   placeholder="เบอร์มือถือ, รหัสประจำตัวประชาชน, TAX ID, e-Wallet"
                   onKeyPress="if(this.value.length==15) return false;" required>
               </div>
               <div class="form-group error">
                 <label>จำนวนเงิน</label>
-                <input type="number" step="0.01" class="form-control" id="amount" placeholder="1000.00 (Optional)">
+                <input type="number" inputmode="decimal" step="0.01" class="form-control" id="amount" placeholder="1000.00 (Optional)">
               </div>
               <button type="button" class="btn btn-primary btn-lg" id="myBtn">สร้าง QR Code รับเงิน</button>
             </form>
