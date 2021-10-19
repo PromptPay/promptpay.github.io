@@ -16,14 +16,15 @@ This public site not store any your information.
 
 # PoC Transfer to Bank
 This source code test with
-- BAY - Bank of Ayudhya
-- BBL - Bangkok Bank
-- KBANK - Kasikorn Bank
-- KTB - Krung Thai Bank
-- SCB - Siam Commercial Bank
-- TBANK - Thanachart Bank
-- TMB - Thai Military Bank
+- KMA - Bank of Ayudhya
+- Bualuang mBanking - Bangkok Bank
+- K PLUS - Kasikorn Bank
+- KTB netbank - Krung Thai Bank
+- SCB Easy - Siam Commercial Bank
+- Thanachart Connect - Thanachart Bank
+- TMB Touch - Thai Military Bank
 - MyMo - Government Savings Bank
+- KK e-Banking - Kiatnakin Bank
 - TrueMoney Wallet
 ---
 
