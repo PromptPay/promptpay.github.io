@@ -1,7 +1,7 @@
 # PromptPay.github.io
 Generate PromptPay QR Code for payment in Thailand. This project is open-source and free for copy to any project. We're concerned on Privacy, All of code in this project is running on client-side and not create any logging or individual information. This project can running on 100% offline mode.
 
-เว็บสำหรับการสร้าง QR Code เพื่อใช้งานในระบบ PromptPay ของประเทศไทย โดยมุ่งเน้นไปยังความเป็นส่วนตัวของข้อมูล เจ้าของโปรเจคนี้ได้กำหนดนโยบาลสำหรับการพัฒนาโดยห้ามเก็บข้อมูลส่วนตัวใดๆ ของผู้ใช้งาน และต้องเปิดเผยหลักการทำงานทุกอย่างของเว็บไซต์นี้
+เว็บสำหรับการสร้าง QR Code เพื่อใช้งานในระบบ PromptPay ของประเทศไทย โดยมุ่งเน้นไปยังความเป็นส่วนตัวของข้อมูล เจ้าของโปรเจคนี้ได้กำหนดนโยบายสำหรับการพัฒนาโดยห้ามเก็บข้อมูลส่วนตัวใด ๆ ของผู้ใช้งาน และต้องเปิดเผยหลักการทำงานทุกอย่างของเว็บไซต์นี้
 
 ## List of data request.
 - PromptPay ID (Phone number, ID Card, TAX ID, e-wallet)
